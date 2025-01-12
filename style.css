@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2efeb;
+    background-image: url(PORTFOLIO.png);
+    background-size: cover;
+}
+img {
+    height: 100%;
+    width: 100%;
+    z-index: -99999;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-family: Lexend Deca;
+    position: relative;
+  }
+  .nav-list:hover {
+    /* background-color: #420203;
+    color: #f2efeb; */
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    border: #420203;
+    background-color: #420203;
+    border-radius: 20px;
+    border-width: 4px;
+    border-style: solid;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: #f2efeb;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-size: 25px;
+    transition: all 0.5s;
+  }
+  
+  .nav-list li a:hover {
+    font-size: 27px;
+    text-decoration: underline;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .nav-list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+    }
+  
+    .nav-list.active {
+      display: flex;
+    }
+  }
